@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="3349" started-at="2019-05-28T10:05:34Z" finished-at="2019-05-28T10:05:38Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="3349" started-at="2019-05-28T10:05:34Z" finished-at="2019-05-28T10:05:38Z">
+      <class name="daemonSolutions.DaemonSolutions_SeleniumTest">
+        <test-method status="PASS" signature="login()[pri:0, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="login" is-config="true" duration-ms="1651" started-at="2019-05-28T11:05:34Z" description="Anything annotated with the annotation @BeforeTest will run first" finished-at="2019-05-28T11:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="check_availability()[pri:0, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_availability" duration-ms="173" started-at="2019-05-28T11:05:36Z" description="Locating elements and the test logic goes here." finished-at="2019-05-28T11:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_availability -->
+        <test-method status="PASS" signature="check_careers()[pri:1, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_careers" duration-ms="125" started-at="2019-05-28T11:05:36Z" description="The the elements and the test logic goes here." finished-at="2019-05-28T11:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_careers -->
+        <test-method status="PASS" signature="check_DevOps()[pri:2, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_DevOps" duration-ms="38" started-at="2019-05-28T11:05:36Z" description="Checking the DevOps practise pages" finished-at="2019-05-28T11:05:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_DevOps -->
+        <test-method status="PASS" signature="check_Cloud()[pri:3, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_Cloud" duration-ms="68" started-at="2019-05-28T11:05:36Z" description="Checking the Cloud Practise pages" finished-at="2019-05-28T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Cloud -->
+        <test-method status="PASS" signature="check_Performance_Engineering()[pri:4, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_Performance_Engineering" duration-ms="127" started-at="2019-05-28T11:05:37Z" description="Checking the PE practise pages" finished-at="2019-05-28T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Performance_Engineering -->
+        <test-method status="PASS" signature="check_MI_AI()[pri:5, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_MI_AI" duration-ms="38" started-at="2019-05-28T11:05:37Z" description="Checking the MI/AI practise pages" finished-at="2019-05-28T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_MI_AI -->
+        <test-method status="PASS" signature="check_Digital_engineering()[pri:6, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_Digital_engineering" duration-ms="145" started-at="2019-05-28T11:05:37Z" description="Checking the DE practise pages" finished-at="2019-05-28T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Digital_engineering -->
+        <test-method status="PASS" signature="check_Technical_delivery()[pri:7, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_Technical_delivery" duration-ms="65" started-at="2019-05-28T11:05:37Z" description="Checking the Technical Delivery practise pages" finished-at="2019-05-28T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_Technical_delivery -->
+        <test-method status="PASS" signature="check_design_thinking()[pri:8, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_design_thinking" duration-ms="32" started-at="2019-05-28T11:05:37Z" description="Checking the Design Thinking practise pages" finished-at="2019-05-28T11:05:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_design_thinking -->
+        <test-method status="PASS" signature="check_blog_page()[pri:9, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="check_blog_page" duration-ms="865" started-at="2019-05-28T11:05:37Z" description="Checking the blog page" finished-at="2019-05-28T11:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- check_blog_page -->
+        <test-method status="PASS" signature="quite_Browser()[pri:0, instance:daemonSolutions.DaemonSolutions_SeleniumTest@22f71333]" name="quite_Browser" is-config="true" duration-ms="8" started-at="2019-05-28T11:05:38Z" description="This will kill the driver." finished-at="2019-05-28T11:05:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quite_Browser -->
+      </class> <!-- daemonSolutions.DaemonSolutions_SeleniumTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
