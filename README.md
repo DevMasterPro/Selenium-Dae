@@ -1,2 +1,0 @@
-# Selenium-Dae
-Selenium Test
