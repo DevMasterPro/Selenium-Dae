@@ -26,6 +26,8 @@ public class MyConnection {
 			String user = System.getenv("P_USERNAME");
 			String pass = System.getenv("P_PASSWORD");
 			String host = System.getenv("P_HOST");
+			
+	        System.out.println("Username using system property: "  + user +" "+pass + " " + host);
 			con = DriverManager.getConnection(host,user,pass);
 			
 			//	con = DriverManager.getConnection(host, username,password);
