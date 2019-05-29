@@ -1,11 +1,14 @@
 package daemonSolutions;
 
+import java.io.FileInputStream;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.Statement;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Map;
+import java.util.Properties;
 
 public class MyConnection {
 	// created an empty constructer
@@ -17,8 +20,17 @@ public class MyConnection {
 		Connection con = null;
 
 		try {
+				
 			Class.forName("com.mysql.jdbc.Driver");
-			con = DriverManager.getConnection("jdbc:mysql://localhost:3306/daemon_solutions", "root", "");
+
+			String user = System.getenv("P_USERNAME");
+			String pass = System.getenv("P_PASSWORD");
+			String host = System.getenv("P_HOST");
+			con = DriverManager.getConnection(host,user,pass);
+			
+			//	con = DriverManager.getConnection(host, username,password);
+			//"jdbc:mysql://localhost:3306/daemon_solutions"
+			
 		} catch (Exception ex) {
 			System.out.println("Failed to connect to the database. \n" + ex.getMessage());
 		}

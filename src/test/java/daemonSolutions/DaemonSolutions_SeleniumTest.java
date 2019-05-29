@@ -22,7 +22,6 @@ public class DaemonSolutions_SeleniumTest {
 		webDriver = new HtmlUnitDriver();
 		webDriver.get("https://www.daemonsolutions.com/");
 		connection.startConnection();
-
 	}
 
 	@Test(priority = 0, description = "Locating elements and the test logic goes here.")
