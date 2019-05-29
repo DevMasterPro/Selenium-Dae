@@ -21,17 +21,6 @@ public class MyConnection {
 
 		try {
 				
-			Class.forName("com.mysql.jdbc.Driver");
-
-			String user = System.getenv("P_USERNAME");
-			String pass = System.getenv("P_PASSWORD");
-			String host = System.getenv("P_HOST");
-			
-	        System.out.println("Username using system property: "  + user +" "+pass + " " + host);
-			con = DriverManager.getConnection(host,user,pass);
-			
-			//	con = DriverManager.getConnection(host, username,password);
-			//"jdbc:mysql://localhost:3306/daemon_solutions"
 			
 			 
 	        System.out.println("Read Specific Enviornment Variable");
@@ -44,6 +33,20 @@ public class MyConnection {
 	            System.out.println("Variable Name:- " + entry.getKey() + " Value:- " + entry.getValue());
 	        }
 			
+			
+			Class.forName("com.mysql.jdbc.Driver");
+
+			String user = System.getenv("P_USERNAME");
+			String pass = System.getenv("P_PASSWORD");
+			String host = System.getenv("P_HOST");
+			
+	        System.out.println("Username using system property: "  + user +" "+pass + " " + host);
+			con = DriverManager.getConnection(host,user,pass);
+			
+			//	con = DriverManager.getConnection(host, username,password);
+			//"jdbc:mysql://localhost:3306/daemon_solutions"
+			
+		
 		} catch (Exception ex) {
 			System.out.println("Failed to connect to the database. \n" + ex.getMessage());
 		}
