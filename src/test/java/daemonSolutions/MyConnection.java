@@ -33,6 +33,17 @@ public class MyConnection {
 			//	con = DriverManager.getConnection(host, username,password);
 			//"jdbc:mysql://localhost:3306/daemon_solutions"
 			
+			 
+	        System.out.println("Read Specific Enviornment Variable");
+	        System.out.println("JAVA_HOME Value:- " + System.getenv("JAVA_HOME"));
+	 
+	        System.out.println("\nRead All Variables:-\n");
+	 
+	        Map <String, String> map = System.getenv();
+	        for (Map.Entry <String, String> entry: map.entrySet()) {
+	            System.out.println("Variable Name:- " + entry.getKey() + " Value:- " + entry.getValue());
+	        }
+			
 		} catch (Exception ex) {
 			System.out.println("Failed to connect to the database. \n" + ex.getMessage());
 		}
