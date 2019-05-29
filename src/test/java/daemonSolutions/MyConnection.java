@@ -19,21 +19,7 @@ public class MyConnection {
 	public Connection startConnection() {
 		Connection con = null;
 
-		try {
-				
-			
-			 
-	        System.out.println("Read Specific Enviornment Variable");
-	        System.out.println("JAVA_HOME Value:- " + System.getenv("JAVA_HOME"));
-	 
-	        System.out.println("\nRead All Variables:-\n");
-	 
-	        Map <String, String> map = System.getenv();
-	        for (Map.Entry <String, String> entry: map.entrySet()) {
-	            System.out.println("Variable Name:- " + entry.getKey() + " Value:- " + entry.getValue());
-	        }
-			
-			
+		try {		
 			Class.forName("com.mysql.jdbc.Driver");
 
 			String user = System.getenv("P_USERNAME");
@@ -41,7 +27,7 @@ public class MyConnection {
 			String host = System.getenv("P_HOST");
 			
 	        System.out.println("Username using system property: "  + user +" "+pass + " " + host);
-			con = DriverManager.getConnection(host,user,pass);
+			//con = DriverManager.getConnection(host,user,pass);
 			
 			//	con = DriverManager.getConnection(host, username,password);
 			//"jdbc:mysql://localhost:3306/daemon_solutions"
