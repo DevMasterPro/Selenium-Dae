@@ -27,7 +27,7 @@ public class MyConnection {
 			String host = System.getenv("P_HOST");
 			
 	        System.out.println("Username using system property: "  + user +" "+pass + " " + host);
-			//con = DriverManager.getConnection(host,user,pass);
+			con = DriverManager.getConnection(host,user,pass);
 			
 			//	con = DriverManager.getConnection(host, username,password);
 			//"jdbc:mysql://localhost:3306/daemon_solutions"
